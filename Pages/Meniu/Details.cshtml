@@ -1,0 +1,43 @@
+﻿@page
+@model TRIFAN_RAUL_EXAMEN_FINAL.Pages.Meniu.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalii";
+}
+
+
+
+<div style="color:black ; font-family:'MV Boli'">
+    <h4>Mr. Yu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurant.Preparat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Restaurant.Preparat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurant.Descriere)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Restaurant.Descriere)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurant.Gramaj)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Restaurant.Gramaj)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurant.Pret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Restaurant.Pret)
+        </dd>
+    </dl>
+</div>
+<div style="color:black ; font-family:'MV Boli'">
+    <a asp-page="./Edit" asp-route-id="@Model.Restaurant.ID">Editeaza</a> |
+    <a asp-page="./Index">Inapoi la meniu</a>
+</div>
